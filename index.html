@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          screens: {
+            sm: "300px",
+            md: "768px",
+            lg: "976px",
+            xl: "1440px",
+          },
+          extend: {
+            colors: {
+              primaryColor: "#ac9970",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-white text-black">
+    <div class="navbar px-20 py-3 mx-auto">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <label tabindex="0" class="btn btn-ghost lg:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h8m-8 6h16"
+              />
+            </svg>
+          </label>
+          <ul
+            tabindex="0"
+            class="bg-white menu menu-compact dropdown-content mt-3 p-2 shadow rounded-md w-52"
+          >
+            <li><a>PRODUCTS</a></li>
+            <li><a>USER GUIDES</a></li>
+            <li><a>SOLUTIONS</a></li>
+            <li><a>APPAREL</a></li>
+            <li><a>APPAREL</a></li>
+
+            <li><a>SUPPORT</a></li>
+          </ul>
+        </div>
+        <div class="sm:hidden md:inline">
+          <!-- <h1 class="text-white font-bold text-2xl ">Hello</h1> -->
+          <img class="w-20" src="/images/rode-logo.png" alt="" />
+        </div>
+      </div>
+      <div class="sm:inline md:hidden">
+        <!-- <h1 class="text-white font-bold text-2xl ">Hello</h1> -->
+        <img
+          class="w-20 sm:navbar-center md:navbar-start"
+          src="/images/rode-logo.png"
+          alt=""
+        />
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="text-dark menu menu-horizontal p-0">
+          <li><a>PRODUCTS</a></li>
+          <li><a>USER GUIDES</a></li>
+          <li><a>SOLUTIONS</a></li>
+          <li><a>APPAREL</a></li>
+          <li><a>APPAREL</a></li>
+
+          <li><a>SUPPORT</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end">
+        <i class="cursor-pointer fa-solid fa-magnifying-glass text-2xl"></i>
+      </div>
+    </div>
+
+    <!-- HERO SECITON -->
+
+    <div id="hero-section">
+      <!-- for medium and large screen -->
+      <div
+        class="hero-md sm:hidden md:inline-block"
+        style="
+          background-image: url(./images/rode-hero.jpg);
+          background-size: cover;
+          background-position: center;
+          height: 70vh;
+        "
+      >
+        <div
+          class="text-center px-20 grid sm:grid-cols-1 md:grid-cols-2 justify-items-center items-center h-[70vh]"
+        >
+          <div></div>
+          <div class="wrapper">
+            <div class="flex justify-center">
+              <img
+                class="w-[500px] px-0 mx-0"
+                src="./images/hero-heading.svg"
+                alt=""
+              />
+            </div>
+            <h1 class="text-3xl text-white my-5">The Revolution Is Here</h1>
+            <p class="text-gray-300 text-lg">
+              The RØDECaster Pro II is the world's most powerful all-in-one
+              audio solution for streamers, podcasters, musicians, and creators.
+              Take your content to the next level.
+            </p>
+            <div class="links text-xl font-bold text-white mt-10">
+              <a href="#" class="text-primaryColor mr-5"
+                >LEARN MORE <i class="fa-solid fa-arrow-right-long"></i>
+              </a>
+              <a href="#" class="bg-primaryColor rounded-full px-8 py-3"
+                >BUY NOW</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- for small screen -->
+      <div class="hero-sm sm:inline-block md:hidden text-center">
+        <!--  -->
+        <div class="content-wrapper bg-black p-5 pt-20">
+          <img
+            class="w-[500px] px-0 mx-0 mt-10"
+            src="./images/hero-heading.svg"
+            alt=""
+          />
+          <h1 class="text-3xl text-white mt-10">The Revolution Is Here</h1>
+          <p class="text-gray-300 text-lg mt-5">
+            The RØDECaster Pro II is the world's most powerful all-in-one audio
+            solution for streamers, podcasters, musicians, and creators. Take
+            your content to the next level.
+          </p>
+          <div class="links text-md font-bold text-white mt-5 pb-20">
+            <a href="#" class="text-primaryColor mr-5"
+              >LEARN MORE <i class="fa-solid fa-arrow-right-long"></i>
+            </a>
+            <a
+              href="#"
+              class="mt-5 inline-block bg-primaryColor rounded-full px-8 py-3"
+              >BUY NOW</a
+            >
+          </div>
+          <!--  -->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
